@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>React Native Intro</title>
+
+		<meta name="description" content="Redux Intro">
+		<meta name="author" content="Roth Peng">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="node_modules/prismjs/themes/prism.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+		<style>
+.reveal pre code { max-height: 500px !important;}
+a { color: white !important; text-decoration: underline !important;}
+		</style>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section data-background="#b5533c">
+					<p style="font-size: 3em">React Native</p>
+          <p style="font-size: 1.1em">Use javascript to build your iOS/Android App Frameworks</p>
+					<p>
+						<small><a href="https://github.com/roth1002">Roth (Y. J. Peng)</a></small>
+					</p>
+				</section>
+
+        <!-- <section data-background="#b5533c">
+          <p style="font-size: 3em">Redux</p>
+          <p style="font-size: 1.1em">predictable state container</p>
+          <p>
+            <small><a href="https://github.com/roth1002">Roth (Y. J. Peng)</a></small>
+          </p>
+        </section>
+ -->
+        <section data-transition="slide" data-background="#4d7e65">
+          <section>
+            <p style="font-size: 2em">MVC 有什麼問題？</p>
+          </section>
+          <section>
+            <p style="font-size: 2em">怎麼會扯到這個？</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">因為在React Native之前已經有 PhoneGap / Titanium 等框架</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">由於出現時間已久</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">肯定具有上次我介紹Flux的時候 用力批評MVC的問題存在</p>
+          </section>
+          <section>
+            <p>實際上實作的結果</p>
+            <img src="img/mvc.png" />
+          </section>
+          <section>
+            <p>再次參考一下這個影片吧：<br /><a href="https://www.youtube.com/watch?v=nYkdrAPrdcw" target="_blank">Rethinking Web App Development at Facebook</a></p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">要改善這件事情必須從架構面開始改</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">所以要用Javascript 打造iOS/Android App</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">必須從iOS/Android原生支援的Javascript去打造Library</p>
+          </section>
+                    <section>
+            <p style="font-size: 1.8em">這就是React Native想做的事情</p>
+          </section>
+        </section>
+
+        <section data-transition="slide" data-background="#4d7e65">
+          <section>
+            <p style="font-size: 1.8em">React Native的精神</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">並非「只需撰寫一次，到處皆可執行」式的框架</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">而是提供你 「學好一套技能，到處皆可實作」的框架</p>
+          </section>
+          <section>
+            <p>基本的建構APP的方式可以參考這篇文章：<br /><a href="http://www.appcoda.com.tw/react-native-introduction" target="_blank">React Native Introduction</a></p>
+          </section>
+        </section>
+
+        <section data-transition="slide" data-background="#4d7e65">
+          <section>
+            <p style="font-size: 1.8em">目前 React Native的狀況</p>
+          </section>
+          <section>
+            <p>已經支援 Hot Reloading <br /><a href="https://github.com/facebook/react-native/releases/tag/v0.22.0" target="_blank">React Native v0.22 Release Note</a></p>
+          </section>
+          <section>
+            <p>可以套用 Flux 架構： <br /><a href="https://github.com/roth1002/react-native-counter-ios-android" target="_blank">Counter Example</a></p>
+          </section>
+        </section>
+
+        <section data-transition="slide" data-background="#4d7e65">
+          <section>
+            <p style="font-size: 2em">Conclusion & Demo</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">門檻</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">Easy for Web Base or App Base ?</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">Native Library needed ?</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">以我 Web Base 對前端已經有中階等級程度的開發者來看</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">App有很多我不太確定怎麼做比較好的行為</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">對 Mobile App Team呢？</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">不熟悉 Web 前端恐怕更困難</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">QNAP現在有著「遠古的UX Team」（對前端來說三年就是遠古了）</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">會不會 Mobile App Team也是 「遠古」？</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">給Javascript操作的Native Library他們做得出來嗎？</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">我們 Team 是否有辦法上手？</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">可以！！！  必須要一部份 Web Base的人去學習 Mobile App</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">只要公司高層有把 「前端的研究」 看重的跟 ML/DNN 以及 Cloud架構一樣重要，就可能......</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">歡迎大家來學前端（首領好像會Android是吧  開分享會了啊 順便實做一個App看看....)</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">回到正題，.....</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">對我們公司目前要引入React Native的最好方式</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">Mobile App Team要來分享他們寫的App</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">同時 Mobile App Team也得同步學習 React Native</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">先從幾個元件的畫面開始改起</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">慢慢取代掉可以取代的View 核心</p>
+          </section>
+          <section>
+            <p style="font-size: 1.8em">我個人不覺得是件容易的事情..... 從上次 Ceasar Chi 來分享 React 之後的冷落響應.....</p>
+          </section>
+        </section>
+
+        <section data-transition="slide" data-background="#4d7e65">
+          <section>
+            <p style="font-size: 1.8em">感謝收聽</p>
+            <p style="font-size: 1.8em">Thanks For Listening</p>
+          </section>
+        </section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'node_modules/prismjs/prism.js'},
+                    { src: 'node_modules/prismjs/components/prism-bash.min.js'},
+                    { src: 'node_modules/prismjs/plugins/autolinker/prism-autolinker.min.js'},
+                    { src: 'node_modules/prismjs/components/prism-javascript.min.js', async: true, callback: function() {
+                    		Prism.highlightAll();
+                    	}
+                    },
+                    { src: 'node_modules/prismjs/components/prism-bash.min.js', async: true, callback: function() {
+                    		Prism.highlightAll();
+                    	}
+                    },
+                    { src: 'node_modules/prismjs/components/prism-ruby.min.js', async: true, callback: function() {
+                    		Prism.highlightAll();
+                    	}
+                    },
+					// { src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() {
+					// 	hljs.initHighlightingOnLoad(); }
+					// },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+
+	</body>
+</html>
